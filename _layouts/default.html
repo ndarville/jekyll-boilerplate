@@ -23,7 +23,11 @@
 
         <link rel="shortcut icon" href="/favicon.ico" />
     </head>
-    <body>
+{% if page.front == true %}
+    <body id="frontpage">
+{% else %}
+    <body id="page">
+{% endif %}
         <div id="container">
             <div class="row">
                 <ul id="site-navigation" class="box" role="navigation">
