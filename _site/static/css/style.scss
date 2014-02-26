@@ -260,8 +260,7 @@ mark {
         }
 
         #name {
-            background: url("/static/css/backgrounds/dendrit.png") #F8F8F8 right center no-repeat;
-            background-size: auto 100%;
+            background-color: #F8F8F8;
 
             h1 {
                 @include getVerticalRhythm(21px);
@@ -306,8 +305,7 @@ mark {
         }
 
         #name {
-            background: url("/static/css/backgrounds/dendrit.png") #F8F8F8 right center no-repeat;
-            background-size: contain; // auto 100%
+            background-color: #F8F8F8;
 
             h1 {
                 @include getVerticalRhythm(21px);
