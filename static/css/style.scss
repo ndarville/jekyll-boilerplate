@@ -1,3 +1,5 @@
+//! Revise #content rules
+
 $font: Verdana, sans-serif;
 
 $blue:  #7F8EBC;
@@ -12,9 +14,11 @@ $fontSize:   14px;
 $lineHeight: 1.5 * $fontSize; // 21px
 
 $navigationSize:         12px;
-$nameH1Size:             42px;
-$nameHeaderSize:         28px;
+$nameH1Size:             32px;
+$nameHeaderSize:         24px;
 $footerSize:             12px;
+$pageH1Size:             24px;
+$PageHeaderSize:         18px;
 
 $mediaQueryiPhoneLarge: "(min-device-width: 320px) and (max-device-width: 568px)";
 $mediaQueryiPhoneSmall: "(min-device-width: 320px) and (max-device-width: 480px)";
@@ -109,6 +113,7 @@ mark {
 }
 .column {}
 .box {
+    width: 100%;
     padding: $boxPadding;
     float: left;
     @include clearfix;
@@ -124,7 +129,6 @@ mark {
     @include padding-fix;
 
     &.box {
-        width: 100%;
         padding: .5em 2em;
     }
 
@@ -146,9 +150,7 @@ mark {
 
 #name {
     .box {
-        padding-left: 5em;
-        width: 80%;
-
+        padding: 0 5em;
     }
 
     h1 {
@@ -164,7 +166,6 @@ mark {
 
 #intro {
     .box {
-        width: 100%;
         padding: 0;
 
         .embed-container {
@@ -189,20 +190,13 @@ mark {
     }
 }
 
-#company-info {
-    &.box {
-        width: 100%;
-    }
-
-    h2 {
-        color: $blue;
-
+#company-info h2 {
+    color: $blue;
 }
 
 #footer {
     @include getFontSize($footerSize);
     @include center;
-    width: 100%;
 
     a {
         font-weight: bold;
@@ -211,7 +205,6 @@ mark {
 }
 
 #content {
-    width: 100%; // 80%
     float: left;
 
     #header {  //!
@@ -272,13 +265,11 @@ mark {
         }
 
         #company-info.box {
-            width: 100%;
             float: left;
             clear: both;
         }
 
         #content {
-            width: 100%;
             float: left;
             clear: both;
         }
