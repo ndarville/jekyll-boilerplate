@@ -16,6 +16,8 @@ This creates a `_site/` folder and starts a `localhost:4000` server.
 ## Asides
 Page files are in [Markdown][markdown], .markdown. They are viewable in any text editor, but try out [Mou][mou] if you want to see the rendered version.
 
+As usual, you can update your `style.css` with the changes to `style.scss` by running `sass --watch style.scss:style.css` in `static/css/`.
+
 Leave feedback and questions in Issues, if you want.
 
 
