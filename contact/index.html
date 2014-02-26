@@ -1,0 +1,11 @@
+---
+layout: default
+title:  "Contact"
+---
+{% capture content %}
+{% include pages/contact.markdown %}
+{% endcapture %}
+
+<div id="content" class="box">
+    {{ content | markdownify }}
+</div>

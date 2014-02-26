@@ -1,0 +1,21 @@
+<ul id="page-navigation" class="box" role="navigation">
+    {% if page.section == "about" %}
+        <li><a href="/about/company-profile/">Company Profile</a/></li>
+        <li><a href="/about/mission-and-vision/">Mission &amp; Vision</a/></li>
+        <li><a href="/about/management/">Management</a/></li>
+        <li><a href="/about/board-of-directors/">Board of Directors</a/></li>
+        <li><a href="/about/strategic-alliances/">Strategic Alliances</a/></li>
+        <li><a href="/about/contact/">Contact</a/></li>
+    {% elsif page.section == "research" %}
+        <li><a href="/research/scientific-publications/">Scientific Publications</a/></li>
+        <li><a href="/research/pipeline/">Pipeline</a/></li>
+        <li><a href="/research/clinical-trials/">Clinical Trials</a/></li>
+        <li><a href="/research/vaccine-platform/">Vaccine Platform</a/></li>
+    {% elsif page.section == "products" %}
+        <li><a href="/products/melcancervac/">MelCancerVac&reg;</a/></li>
+    {% elsif page.section == "patients" %}
+        <li><a href="/patients/cancer-information/">Cancer Information</a/></li>
+    {% elsif page.section == "investors" %}
+        <li><a href="/investors/investor-relations/">Investor Relations</a/></li>
+    {% endif %}
+</ul>
