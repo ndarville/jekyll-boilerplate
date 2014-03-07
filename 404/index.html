@@ -1,0 +1,11 @@
+---
+layout: default
+title:  "Page Not Found (404)"
+---
+{% capture content %}
+{% include pages/404.markdown %}
+{% endcapture %}
+
+<div id="content" class="box">
+    {{ content | markdownify }}
+</div>
