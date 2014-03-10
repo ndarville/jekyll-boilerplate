@@ -22,6 +22,10 @@
     -->
 
         <link rel="shortcut icon" href="/favicon.ico" />
+
+    {% if page.front == true %}
+        <link href="/about/" rel="prerender" />
+    {% endif %}
     </head>
 {% if page.front == true %}
     <body id="frontpage">
