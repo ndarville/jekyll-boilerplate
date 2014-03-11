@@ -8,7 +8,7 @@ $black: #555;
 $containerWidth: 800px;
 $mobileWidth:    600px;
 
-$boxPadding: 0 3em;
+$boxPadding: 2.5em;
 
 $fontSize:   14px;
 $lineHeight: 1.5 * $fontSize; // 21px
@@ -28,7 +28,8 @@ $mediaQueryiPad:        "(min-device-width: 768px) and (max-device-width: 1024px
     font-size: $size/$fontSize * 1em;
     @if $size <= 12 { color: #000; }
 }
-@mixin getMarginTop($size)  { margin-top: $lineHeight/$size * 1em; }
+// @mixin getMarginTop($size)  { margin-top: $lineHeight/$size * 1em; }
+@mixin getMarginTop($size)  { margin-top: 0; }
 @mixin getLineHeight($size) { line-height: $lineHeight/$size * 1em; }
 @mixin getVerticalRhythm($size) {
     @include getFontSize($size);
@@ -114,11 +115,11 @@ mark {
 .column {}
 .box {
     width: 100%;
-    padding: $boxPadding;
+    display: inline-block;
     float: left;
+    padding: $boxPadding;
     @include clearfix;
     @include box-sizing;
-    display: inline-block;
 }
 
 #site-navigation {
@@ -170,7 +171,7 @@ mark {
 
         .embed-container {
             position: relative;
-            padding-bottom: 56.25%; /** 16:9 */
+            padding-bottom: 56.25%; // 16:9
             padding-top: 30px;
             height: 0;
             overflow: hidden;
@@ -237,10 +238,6 @@ mark {
             max-width: 450px;
         }
 
-        .box {
-            padding: 0 1.5em;
-        }
-
         #site-navigation.box {
             @include getFontSize(10px);
             margin-top: 0 !important; //!
@@ -296,8 +293,6 @@ mark {
         }
 
         #name {
-            background-color: #F8F8F8;
-
             h1 {
                 @include getVerticalRhythm(21px);
             }

@@ -32,8 +32,9 @@ mark {
 
 .box {
   width: 100%;
-  padding: 0 3em;
+  display: inline-block;
   float: left;
+  padding: 2.5em;
   /**
       http://css-tricks.com/box-sizing/
   
@@ -45,8 +46,7 @@ mark {
   */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: inline-block; }
+  box-sizing: border-box; }
   .box:after {
     content: ".";
     display: block;
@@ -81,12 +81,12 @@ mark {
   padding: 0 5em; }
 #name h1 {
   font-size: 2.28571em;
-  margin-top: 0.65625em;
+  margin-top: 0;
   line-height: 0.65625em;
   line-height: 1em; }
 #name #header {
   font-size: 1.71429em;
-  margin-top: 0.875em;
+  margin-top: 0;
   line-height: 0.875em;
   line-height: 1.25em; }
 
@@ -95,7 +95,6 @@ mark {
   #intro .box .embed-container {
     position: relative;
     padding-bottom: 56.25%;
-    /** 16:9 */
     padding-top: 30px;
     height: 0;
     overflow: hidden;
@@ -127,11 +126,11 @@ mark {
   float: left; }
   #content #header {
     font-size: 1.28571em;
-    margin-top: 1.16667em;
+    margin-top: 0;
     line-height: 1.16667em; }
   #content h1 {
     font-size: 1.71429em;
-    margin-top: 0.875em;
+    margin-top: 0;
     line-height: 0.875em; }
   #content a {
     color: #7f8ebc;
@@ -146,9 +145,6 @@ mark {
     width: 100%;
     max-width: 450px; }
 
-  .box {
-    padding: 0 1.5em; }
-
   #site-navigation.box {
     font-size: 0.71429em;
     color: #000;
@@ -162,11 +158,11 @@ mark {
     background-color: #F8F8F8; }
     #name h1 {
       font-size: 1.5em;
-      margin-top: 1em;
+      margin-top: 0;
       line-height: 1em; }
     #name #header {
       font-size: 1em;
-      margin-top: 1.5em;
+      margin-top: 0;
       line-height: 1.5em; }
 
   #company-info.box {
@@ -187,9 +183,9 @@ mark {
     background-color: #F8F8F8; }
     #name h1 {
       font-size: 1.5em;
-      margin-top: 1em;
+      margin-top: 0;
       line-height: 1em; }
     #name #header {
       font-size: 1em;
-      margin-top: 1.5em;
+      margin-top: 0;
       line-height: 1.5em; } }
