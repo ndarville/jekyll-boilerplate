@@ -264,4 +264,7 @@ th {
 // Headers
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
 }
