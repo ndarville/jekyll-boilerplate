@@ -26,7 +26,7 @@ linters:
   IdWithExtraneousSelector:
     enabled: false
   Indentation:
-    enabled: true
+    enabled: false  # Disabled for extra indentaiton
     width: 4  # Subjective
   LeadingZero:
     enabled: true
