@@ -1,0 +1,16 @@
+language: ruby
+
+rvm:
+  - 1.9.3
+
+before_install:
+ - bundle install
+
+script:
+ - jekyll build
+
+after_script:
+ - sass --check static/css/style.scss
+
+after_success:
+ - scss-lint static/css/
