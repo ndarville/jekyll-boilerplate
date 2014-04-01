@@ -12,7 +12,7 @@ env:
 install:
   - bundle install
   - npm install -g csslint
-# - npm install -g ~htmllint
+# - npm install -g ~htmllint ...
 
 
 script:
