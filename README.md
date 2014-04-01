@@ -1,5 +1,7 @@
 Jekyll Project Boilerplate
 ==========================
+[![Build Status](https://travis-ci.org/FranklyWeb/jekyll-boilerplate.svg)](https://travis-ci.org/FranklyWeb/jekyll-boilerplate?branch=master)
+
 A template for building a static website with the Ruby CMS [Jekyll][jekyll], as well as a project-directory template for how I, @ndarville aim to start on each project.
 
 ## Installation

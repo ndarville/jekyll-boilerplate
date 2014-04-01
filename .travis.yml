@@ -3,15 +3,26 @@ language: ruby
 rvm:
   - 1.9.3
 
+env:
+  global:
+  - CSS_FILES="static/css/custom.css"
+  - CSS_FOLDER="static/css"
+  - CSS_EXCLUDES=""
+
 install:
   - bundle install
+  - npm install -g csslint
+# - npm install -g ~htmllint
+
 
 script:
   - jekyll build
 
 after_script:
-  - sass --check static/css/*.scss
-  - scss-lint static/css/
+  - sass --check $CSS_FOLDER/*.scss
+  - scss-lint $CSS_FOLDER
+  - csslint $CSS_FILES --exclude-list=$CSS_EXCLUDES
+# - ~htmllint ...
 
 notifications:
  - email: false
