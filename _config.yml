@@ -9,3 +9,6 @@ redcarpet:
     extensions: ["smart", "footnotes", "tables"]
 
 limit_posts: 0
+
+gems:
+    - jekyll-redirect-from
