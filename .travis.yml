@@ -5,8 +5,8 @@ rvm:
 
 env:
   global:
-  - CSS_FILES="css/custom.css"
-  - CSS_FOLDER="css"
+  - CSS_FILES="static/css/custom.css"
+  - CSS_FOLDER="static/css"
   - CSS_EXCLUDES=""
 
 install:
