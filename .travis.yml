@@ -10,7 +10,7 @@ env:
   - CSS_EXCLUDES=""
 
 install:
-  - bundle install
+  - bundle install --quiet
   - npm install -g csslint
 # - npm install -g ~htmllint ...
 
