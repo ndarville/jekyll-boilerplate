@@ -9,11 +9,6 @@ env:
   - CSS_FOLDER="css"
   - CSS_EXCLUDES=""
 
-before_install:
-  - echo "CSS files: $CSS_FILES"
-  - echo "CSS folder: $CSS_FOLDER"
-  - echo "CSS excludes: $CSS_EXCLUDES"
-
 install:
   - bundle install
   - npm install -g csslint
