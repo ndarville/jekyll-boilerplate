@@ -14,6 +14,9 @@ install:
   - npm install -g csslint
 # - npm install -g ~htmllint ...
 
+before_script:
+  - cat Gemfile.lock
+
 script:
   - jekyll build
 
