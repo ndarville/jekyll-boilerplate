@@ -31,7 +31,7 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: .67em 0; }
 
 mark {
   background: #ff0;
@@ -45,10 +45,10 @@ sup {
   vertical-align: baseline; }
 
 sup {
-  top: -0.5em; }
+  top: -.5em; }
 
 sub {
-  bottom: -0.25em; }
+  bottom: -.25em; }
 
 /* Embedded content
    ========================================================================== */
@@ -134,7 +134,7 @@ input[type="search"]::-webkit-search-decoration {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: .35em .625em .75em; }
 
 legend {
   border: 0;
@@ -158,7 +158,12 @@ th {
 
 /* Custom
    ========================================================================== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
