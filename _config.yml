@@ -13,5 +13,5 @@ limit_posts: 0
 gems:
     - jekyll-redirect-from
 
-include: ['.htaccess']
-exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
+include: [".htaccess"]
+exclude: ["Gemfile", "Gemfile.lock", "README.md", ".sass-cache"]
