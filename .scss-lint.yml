@@ -31,7 +31,7 @@ linters:
   LeadingZero:
     enabled: true
   NameFormat:
-    enabled: true
+    enabled: false  # Subjective
   PlaceholderInExtend:
     enabled: true
   PropertySortOrder:
