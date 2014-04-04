@@ -14,4 +14,4 @@ gems:
     - jekyll-redirect-from
 
 include: ['.htaccess']
-exclude: ['Gemfile', 'Gemfile.lock']
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
