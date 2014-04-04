@@ -6,7 +6,7 @@ rvm:
 env:
   global:
   - CSS_FILES="static/css/style.css"
-  - CSS_FOLDER="static/css"
+  - STYLE_FOLDER="static/css"
   - CSS_EXCLUDES=""
 
 install:
@@ -21,8 +21,8 @@ script:
   - jekyll build
 
 after_script:
-  - sass --check $CSS_FOLDER/*.scss
-  - scss-lint $CSS_FOLDER
+  - sass --check $STYLE_FOLDER/*.scss
+  - scss-lint $STYLE_FOLDER/*.scss
   - csslint $CSS_FILES --exclude-list=$CSS_EXCLUDES
 # - ~htmllint ...
 
