@@ -8,11 +8,13 @@ env:
   - CSS_FILES="static/css/style.css"
   - STYLE_FOLDER="static/css"
   - CSS_EXCLUDES=""
+  - JS_FOLDER="static/js/"
 
 install:
   - bundle install --quiet
   - npm install -g csslint
-# - npm install -g ~htmllint ...
+# - npm install -g htmllint
+  - npm install -g jshint
 
 before_script:
   - cat Gemfile.lock
@@ -24,7 +26,8 @@ after_script:
   - sass --check $STYLE_FOLDER/*.scss
   - scss-lint $STYLE_FOLDER/*.scss
   - csslint $CSS_FILES --exclude-list=$CSS_EXCLUDES
-# - ~htmllint ...
+# - htmllint
+  - jshint $JS_FOLDER
 
 notifications:
  - email: false
