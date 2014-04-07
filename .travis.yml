@@ -12,9 +12,8 @@ env:
 
 install:
   - bundle install --quiet
-  - npm install -g csslint
 # - npm install -g htmllint
-  - npm install -g jshint
+  - npm install -g csslint jshint
 
 before_script:
   - cat Gemfile.lock
