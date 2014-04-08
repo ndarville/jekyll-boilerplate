@@ -15,6 +15,7 @@ gems:
 
 include: [".htaccess"]
 exclude:
+    - ".travis.yml"
     - "Gemfile"
     - "Gemfile.lock"
     - "README.md"
