@@ -1,0 +1,20 @@
+{
+    "name": "jekyll-bootstrap",
+    "version": "0.5.0",
+    "author": "ndarville",
+    "description": "A (well, my) boilerplate for starting a webdesign project with the static-blog CMS Jekyll",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/FranklyWeb/jekyll-bootstrap.git"
+    },
+    "scripts": {
+        "test": "csslint static/css/ && jshint static/js/"
+    },
+    "dependencies" : {
+        "csslint": "*",
+        "jshint":  "*"
+    },
+    "engines": {
+        "node": "==0.10.26"
+    }
+}
