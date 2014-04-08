@@ -21,3 +21,7 @@ exclude:
     - "npm-debug.log"
     - ".sass-cache"
     - "node_modules"
+
+sass:
+    sass_dir: static/css/
+    style: :nested

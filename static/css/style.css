@@ -179,13 +179,11 @@ mark {
     #site-navigation a {
       font-weight: bold; }
 
-  #name {
-    background-color: #F8F8F8; }
-    #name h1 {
-      font-size: 1.5em;
-      margin-top: 0;
-      line-height: 1em; }
-    #name #header {
-      font-size: 1em;
-      margin-top: 0;
-      line-height: 1.5em; } }
+  #name h1 {
+    font-size: 1.5em;
+    margin-top: 0;
+    line-height: 1em; }
+  #name #header {
+    font-size: 1em;
+    margin-top: 0;
+    line-height: 1.5em; } }

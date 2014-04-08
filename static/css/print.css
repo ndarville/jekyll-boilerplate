@@ -1,189 +1,49 @@
 body {
-  font: 14px/21px Verdana, sans-serif;
-  color: #555555; }
-
-a {
-  text-decoration: none;
-  color: #555555; }
-  a:visited {
-    color: black; }
-
-p a {
-  text-decoration: underline; }
-
-mark {
-  padding: 0 3px;
-  background-color: #FFA; }
-
-#container {
-  width: 800px;
-  margin: 0 auto; }
-
-.row {
-  width: 100%;
-  float: left;
-  clear: both; }
-  .row:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden; }
-
-.box {
-  width: 100%;
-  display: inline-block;
-  float: left;
-  padding: 2.5em;
-  /**
-      http://css-tricks.com/box-sizing/
-  
-      Chrome (any)
-      Opera 8.5+
-      Firefox (any)
-      Safari 3
-      IE8+
-  */
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  .box:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden; }
+  background-image: none !important;
+  color: #000 !important; }
 
 #site-navigation {
-  font-size: 0.85714em;
-  color: #000;
-  font-weight: bold;
-  text-align: right;
-  margin-top: 0 !important;
-  /** Margin and padding reset in WebKit */
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-padding-start: 0;
-  padding: 0; }
-  #site-navigation.box {
-    padding: .5em 2em; }
-  #site-navigation li {
-    display: inline-block; }
-    #site-navigation li a {
-      display: inline-block;
-      padding: 0 1em;
-      text-transform: uppercase;
-      color: #555555; }
-      #site-navigation li a:visited {
-        color: #555555; }
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; }
 
-#name .box {
-  padding: 0 5em; }
-#name h1 {
-  font-size: 2.28571em;
-  margin-top: 0;
-  line-height: 0.65625em;
-  line-height: 1em; }
-#name #header {
-  font-size: 1.71429em;
-  margin-top: 0;
-  line-height: 0.875em;
-  line-height: 1.25em; }
-
-#intro .box {
-  padding: 0; }
-  #intro .box .embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    height: auto; }
-    #intro .box .embed-container iframe,
-    #intro .box .embed-container object,
-    #intro .box .embed-container embed {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-
-#company-info h2 {
-  color: #7f8ebc; }
-
+#site-navigation,
+#page-navigation,
+#aside,
 #footer {
-  font-size: 0.85714em;
-  color: #000;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto; }
-  #footer a {
-    font-weight: bold;
-    color: #7f8ebc; }
+  display: none; }
 
 #content {
-  float: left; }
-  #content #header {
-    font-size: 1.28571em;
-    margin-top: 0;
-    line-height: 1.16667em; }
-  #content h1 {
-    font-size: 1.71429em;
-    margin-top: 0;
-    line-height: 0.875em; }
+  width: 100%; }
   #content a {
-    color: #7f8ebc;
-    font-weight: bold; }
-
-@media only screen and (max-device-width: 600px) {
-  body {
-    font-size: 10px;
-    line-height: 15px; }
-
-  #container {
-    width: 100%;
-    max-width: 450px; }
-
-  #site-navigation.box {
-    font-size: 0.71429em;
     color: #000;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    text-align: center; }
-    #site-navigation.box li a {
-      padding: 0 .75em; }
+    font-weight: normal;
+    text-decoration: underline; }
 
-  #name {
-    background-color: #F8F8F8; }
-    #name h1 {
-      font-size: 1.5em;
-      margin-top: 0;
-      line-height: 1em; }
-    #name #header {
-      font-size: 1em;
-      margin-top: 0;
-      line-height: 1.5em; }
+img,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+blockquote {
+  page-break-inside: avoid; }
 
-  #company-info.box {
-    float: left;
-    clear: both; }
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  orphans: 3;
+  widows: 3; }
 
-  #content {
-    float: left;
-    clear: both; } }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  #site-navigation {
-    font-size: 0.71429em;
-    color: #000; }
-    #site-navigation a {
-      font-weight: bold; }
-
-  #name h1 {
-    font-size: 1.5em;
-    margin-top: 0;
-    line-height: 1em; }
-  #name #header {
-    font-size: 1em;
-    margin-top: 0;
-    line-height: 1.5em; } }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  page-break-after: avoid; }
