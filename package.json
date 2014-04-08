@@ -11,8 +11,8 @@
     "test": "csslint static/css/ && jshint static/js/"
   },
   "dependencies": {
-    "csslint": "*",
-    "jshint":  "*"
+    "csslint": "^0.10.0",
+    "jshint": "^2.5.0"
   },
   "engines": {
     "node": "==0.10.26"
