@@ -107,7 +107,7 @@ mark {
     @if $boxPadding != 0 {
         width: $containerWidth
     } @else {
-        width: $containerWidth - 2*$padding;
+        width: $containerWidth + 2*$padding;
     }
 }
 
