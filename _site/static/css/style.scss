@@ -9,6 +9,7 @@ $containerWidth: 800px;
 $mobileWidth:    600px;
 
 $boxPadding: 2.5em;
+$padding:    20px;
 
 $fontSize:   14px;
 $lineHeight: 1.5 * $fontSize; // 21px
@@ -102,8 +103,21 @@ mark {
 }
 
 #container {
-    width: $containerWidth;
     margin: 0 auto;
+    @if $boxPadding != 0 {
+        width: $containerWidth
+    } @else {
+        width: $containerWidth + 2*$padding;
+    }
+}
+
+#padder {
+    @include box-sizing;
+    @if $boxPadding != 0 {
+        margin: 0;
+    } @else {
+        margin: 0 $padding;
+    }
 }
 
 .row {

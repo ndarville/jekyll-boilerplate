@@ -16,8 +16,23 @@ mark {
   background-color: #FFA; }
 
 #container {
-  width: 800px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 800px; }
+
+#padder {
+  /**
+      http://css-tricks.com/box-sizing/
+  
+      Chrome (any)
+      Opera 8.5+
+      Firefox (any)
+      Safari 3
+      IE8+
+  */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0; }
 
 .row {
   width: 100%;
@@ -179,13 +194,11 @@ mark {
     #site-navigation a {
       font-weight: bold; }
 
-  #name {
-    background-color: #F8F8F8; }
-    #name h1 {
-      font-size: 1.5em;
-      margin-top: 0;
-      line-height: 1em; }
-    #name #header {
-      font-size: 1em;
-      margin-top: 0;
-      line-height: 1.5em; } }
+  #name h1 {
+    font-size: 1.5em;
+    margin-top: 0;
+    line-height: 1em; }
+  #name #header {
+    font-size: 1em;
+    margin-top: 0;
+    line-height: 1.5em; } }
