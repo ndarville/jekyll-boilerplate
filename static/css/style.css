@@ -16,8 +16,23 @@ mark {
   background-color: #FFA; }
 
 #container {
-  width: 800px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 760px; }
+
+#padder {
+  /**
+      http://css-tricks.com/box-sizing/
+  
+      Chrome (any)
+      Opera 8.5+
+      Firefox (any)
+      Safari 3
+      IE8+
+  */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 20px; }
 
 .row {
   width: 100%;
@@ -34,7 +49,7 @@ mark {
   width: 100%;
   display: inline-block;
   float: left;
-  padding: 2.5em;
+  padding: 0;
   /**
       http://css-tricks.com/box-sizing/
   

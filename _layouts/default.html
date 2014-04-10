@@ -33,6 +33,7 @@
     <body id="page">
 {% endif %}
         <div id="container">
+        <div id="padder">
             <div class="row">
                 <ul id="site-navigation" class="box" role="navigation">
                     {% include site-navigation.html %}
@@ -46,6 +47,7 @@
                     {% include footer.html %}
                 </div>
             </div>
+        </div>
         </div>
     {% if site.ga != "UA-XXXXXXXX-Y" %}
         <script>
