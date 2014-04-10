@@ -20,6 +20,7 @@ exclude:
     - "Gemfile.lock"
     - "README.md"
     - "npm-debug.log"
+    - "package.json"
     - ".sass-cache"
     - "node_modules"
 
