@@ -23,6 +23,7 @@ exclude:
     - "package.json"
     - ".sass-cache"
     - "node_modules"
+    - "s3_website.yml"
 
 sass:
     sass_dir: static/css/
