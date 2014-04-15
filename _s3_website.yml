@@ -1,0 +1,17 @@
+s3_id:
+s3_secret:
+s3_bucket:
+
+max_age:
+  "static/*": <%= 60 * 60 * 24 %>
+  "*": <%= 60 * 5 %>
+
+gzip: true
+gzip:
+  - .html
+  - .css
+  - .js
+
+cloudfront_distribution_config:
+  default_cache_behavior:
+    "min_TTL": <%= 60 * 60 * 24 %>
