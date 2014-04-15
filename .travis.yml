@@ -5,14 +5,15 @@ rvm:
 
 env:
   global:
-    - CSS_FILES="static/css/style.css"
+    - HTML_FOLDER="_site/"
     - STYLE_FOLDER="static/css"
+    - CSS_FILES="static/css/style.css"
     - CSS_EXCLUDES=""
     - JS_FOLDER="static/js/"
 
 install:
   - bundle install --quiet
-  - npm install csslint jshint
+  - npm install htmlhint csslint jshint
 
 before_script:
   - cat Gemfile.lock
@@ -21,10 +22,10 @@ script:
   - jekyll build
 
 after_script:
+  - htmlhint $HTML_FOLDER
   - sass --check $STYLE_FOLDER/*.scss
   - scss-lint $STYLE_FOLDER/*.scss
   - csslint $CSS_FILES --exclude-list=$CSS_EXCLUDES
-# - htmllint
   - jshint $JS_FOLDER
 
 notifications:
