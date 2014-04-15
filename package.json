@@ -8,7 +8,7 @@
     "url": "https://github.com/FranklyWeb/jekyll-bootstrap.git"
   },
   "scripts": {
-    "test": "csslint static/css/ && jshint static/js/"
+    "test": "htmlhint _site && csslint static/css/ && jshint static/js/"
   },
   "dependencies": {
     "csslint":  "^0.10.0",
