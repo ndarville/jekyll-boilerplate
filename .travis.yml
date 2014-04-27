@@ -17,6 +17,7 @@ install:
 
 before_script:
   - cat Gemfile.lock
+  - bundle outdated
 
 script:
   - jekyll build
