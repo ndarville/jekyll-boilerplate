@@ -1,6 +1,7 @@
 Jekyll Project Boilerplate
 ==========================
-[![Build Status](https://travis-ci.org/FranklyWeb/jekyll-boilerplate.svg)](https://travis-ci.org/FranklyWeb/jekyll-boilerplate?branch=master)
+[![Build Status](https://travis-ci.org/ndarville/jekyll-boilerplate.svg?branch=master)](https://travis-ci.org/ndarville/jekyll-boilerplate?branch=master)
+[![Dependency Status](https://gemnasium.com/ndarville/jekyll-boilerplate.svg?branch=master)](https://gemnasium.com/ndarville/jekyll-boilerplate)
 
 A template for building a static website with the Ruby CMS [Jekyll][jekyll], as well as a project-directory template for how I, @ndarville aim to start on each project.
 
@@ -8,7 +9,7 @@ A template for building a static website with the Ruby CMS [Jekyll][jekyll], as 
 
 Assuming Ruby and Git are installed:
 
-1. `git clone git@github.com:FranklyWeb/jekyll-boilerplate.git`
+1. `git clone git@github.com:ndarville/jekyll-boilerplate.git`
 2. `cd jekyll-boilerplate`
 3. `bundle install`
 4. `jekyll serve --watch`
