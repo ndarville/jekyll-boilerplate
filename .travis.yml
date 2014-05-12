@@ -20,7 +20,7 @@ before_script:
 # - bundle outdated
 
 script:
-  - jekyll build
+  - bundle exec jekyll build
 
 after_script:
   - htmlhint $HTML_FOLDER
