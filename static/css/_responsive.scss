@@ -1,3 +1,5 @@
+@mixin iphone-mq() {};
+
 @media only screen {
     @media (max-device-width: $mobileWidth) {
         body {
