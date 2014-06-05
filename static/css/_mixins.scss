@@ -1,0 +1,74 @@
+@mixin getFontSize($size)   {
+    font-size: $size/$fontSize * 1em;
+    @if $size <= 12 { color: #000; }
+}
+
+// @mixin getMarginTop($size)  { margin-top: $lineHeight/$size * 1em; }
+@mixin getMarginTop($size)  { margin-top: 0; }
+@mixin getLineHeight($size) { line-height: $lineHeight/$size * 1em; }
+@mixin getVerticalRhythm($size) {
+    @include getFontSize($size);
+    @include getMarginTop($size);
+    @include getLineHeight($size);
+}
+
+@mixin box-sizing() {
+// http://css-tricks.com/box-sizing/
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@mixin border-radius($rounding: 5px) {
+    -webkit-border-radius: $rounding;
+       -moz-border-radius: $rounding;
+            border-radius: $rounding;
+}
+
+@mixin center() {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin clearfix() {
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+@mixin padding-fix() {
+    /** Margin and padding reset in WebKit */
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    padding: 0;
+    //! Still doesn't work in Firefox,
+    //  but at least it doesn't have a popular mobile OS
+}
+
+@mixin responsive-vimeo() {
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%; // 16:9
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+
+        iframe,
+        object,
+        embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

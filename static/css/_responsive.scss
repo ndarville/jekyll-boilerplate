@@ -1,0 +1,78 @@
+@media only screen {
+    @media (max-device-width: $mobileWidth) {
+        body {
+            // if device-width <= 600px:
+            //     $fontSize = 10px;
+            font-size: 10px; line-height: 15px; //!
+        }
+
+        #container {
+            width: 100%;
+            max-width: 450px;
+        }
+
+        #site-navigation.box {
+            @include getFontSize(10px);
+            margin-top: 0 !important; //!
+            margin-bottom: 0 !important;  //!
+            text-align: center;
+
+            li a {
+                padding: 0 .75em;
+            }
+        }
+
+        #name {
+            background-color: #F8F8F8;
+
+            h1 {
+                @include getVerticalRhythm(21px);
+            }
+
+            #header {
+                @include getVerticalRhythm(14px);
+            }
+        }
+
+        #company-info.box {
+            float: left;
+            clear: both;
+        }
+
+        #content {
+            float: left;
+            clear: both;
+        }
+    }
+
+    // iPhone 5+
+    @media #{$mediaQueryiPhoneLarge} {
+        @include iphone-mq;
+    }
+
+    // iPhone <5
+    @media #{$mediaQueryiPhoneSmall} {
+        @include iphone-mq;
+    }
+
+    // iPad
+    @media #{$mediaQueryiPad} {
+        #site-navigation {
+            @include getFontSize(10px);
+
+            a {
+                font-weight: bold;
+            }
+        }
+
+        #name {
+            h1 {
+                @include getVerticalRhythm(21px);
+            }
+
+            #header {
+                @include getVerticalRhythm(14px);
+            }
+        }
+    }
+}

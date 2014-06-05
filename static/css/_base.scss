@@ -1,0 +1,56 @@
+body {
+    font: #{$fontSize}/#{$lineHeight} $font;
+    color: $black;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+
+    &:visited {
+        color: black;
+    }
+}
+
+p a {
+    text-decoration: underline;
+}
+
+mark {
+    padding: 0 3px;
+    background-color: #FFA;
+}
+
+#container {
+    margin: 0 auto;
+    @if $boxPadding != 0 {
+        width: $containerWidth
+    } @else {
+        width: $containerWidth + 2*$padding;
+    }
+}
+
+#padder {
+    @include box-sizing;
+    @if $boxPadding != 0 {
+        margin: 0;
+    } @else {
+        margin: 0 $padding;
+    }
+}
+
+.row {
+    width: 100%;
+    float: left;
+    clear: both;
+    @include clearfix;
+}
+
+.box {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding: $boxPadding;
+    @include clearfix;
+    @include box-sizing;
+}
