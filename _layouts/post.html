@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div id="post">
+    <h2>{{ page.title }}</h2>
+    <div class="date">{{ page.date | date_to_string }}</div>
+    {% if site.show_bylines == true %}
+        <div class="byline">{{ site.data.people[page.author].name }}</div>
+        {% if site.github_hosted == true %}
+            <img class="avatar" src="https://github.com/{{ page.author }}.png" alt="{{ site.data.writers[page.author].name }}" title="{{ site.data.writers[page.author].name }}" />
+        {% endif %}
+    {% endif %}
+    </div>
+    {% if page.updated == true %}
+        <div class="updated">
+            This post has been updated since it was first published. To view all the changes, visit <a href="{{ site.github.repository_url }}/commits/master/{{ page.path }}">GitHub</a>
+        </div>
+    {% endif %}
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+</div

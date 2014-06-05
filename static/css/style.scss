@@ -69,8 +69,14 @@
     }
 }
 
-#company-info h2 {
-    color: $blue;
+#company-info h2,
+#posts h2,
+#posts a {
+    color: $blue !important;
+}
+
+#post a {
+    background-color: rgba(200, 200, 200, .7)
 }
 
 #footer {

@@ -277,8 +277,13 @@ mark {
       width: 100%;
       height: 100%; }
 
-#company-info h2 {
-  color: #7f8ebc; }
+#company-info h2,
+#posts h2,
+#posts a {
+  color: #7f8ebc !important; }
+
+#post a {
+  background-color: rgba(200, 200, 200, 0.7); }
 
 #footer {
   font-size: 0.85714em;

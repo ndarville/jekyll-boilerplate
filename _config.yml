@@ -2,13 +2,21 @@ name: "Example Company"
 url:   http://example.com
 ga:   "UA-XXXXXXXX-Y"
 
+github_hosted: true
+
+# Posts # # # # # #
+show_posts: true
+show_bylines: true
+limit_posts: 0
+# # # # # # # # # #
+
+# Markdown # # # # # # # # # # # # # # # # # # # #
 markdown: kramdown
 kramdown:
     input: GFM
 redcarpet:
     extensions: ["smart", "footnotes", "tables"]
-
-limit_posts: 0
+ # # # # # # # # # # # # # # # # # # # # # # # # #
 
 gems:
     - jekyll-redirect-from
