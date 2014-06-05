@@ -24,8 +24,8 @@ script:
 
 after_script:
   - htmlhint $HTML_FOLDER
-  - sass --check $STYLE_FOLDER/*.scss
-  - scss-lint $STYLE_FOLDER/*.scss
+  - bundle exec sass --check $STYLE_FOLDER/*.scss
+  - bundle exec scss-lint $STYLE_FOLDER/*.scss
   - csslint $CSS_FILES --exclude-list=$CSS_EXCLUDES
   - jshint $JS_FOLDER
 
