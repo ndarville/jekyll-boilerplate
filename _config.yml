@@ -1,5 +1,5 @@
 name: "Example Company"
-url:   http://example.com.tmp2.franklyweb.dk/
+url:   http://example.com
 ga:   "UA-XXXXXXXX-Y"
 
 markdown: kramdown
