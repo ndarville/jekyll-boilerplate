@@ -27,6 +27,7 @@ exclude:
     - ".travis.yml"
     - "Gemfile"
     - "Gemfile.lock"
+    - "LICENSE.md"
     - "README.md"
     - "npm-debug.log"
     - "package.json"
