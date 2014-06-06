@@ -21,7 +21,7 @@ Enter Your Details
       website: ndarville.com
       mail: ""
 
-    zampleuser:
+    xampleuser:
       name: John Appleseed
       twitter: ""
       website: example.com
