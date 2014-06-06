@@ -77,9 +77,13 @@
 
 #post {
     img.avatar {
-        width: 125px;
-        height: 125px;
-        @include border-radius(50%);
+        width: $avatarSize;
+        height: $avatarSize;
+        @if $avatarShape == "circle" {
+            @include border-radius(50%);
+        } @elseif $avatarShape == "rounded" {
+            @include border-radius(5px);
+        } // @else == square
     }
 
     a {
