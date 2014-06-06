@@ -21,6 +21,9 @@ linters:
     enabled: true
   EmptyRule:
     enabled: true
+  FinalNewline:
+    enabled: true
+    present: true
   HexLength:
     enabled: true
     style: short
@@ -58,12 +61,15 @@ linters:
     enabled: true
   SpaceBeforeBrace:
     enabled: true
+    allow_single_line_padding: true
   SpaceBetweenParens:
     enabled: true
   StringQuotes:
     enabled: true
     style: double_quotes  # Subjective
   TrailingSemicolonAfterPropertyValue:
+    enabled: true
+  UnnecessaryMantissa:
     enabled: true
   UrlFormat:
     enabled: true
