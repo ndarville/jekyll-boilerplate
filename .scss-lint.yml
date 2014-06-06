@@ -1,4 +1,4 @@
-exclude: '_site/'
+exclude: "_site/"
 
 linters:
   BorderZero:
@@ -21,7 +21,13 @@ linters:
     enabled: true
   EmptyRule:
     enabled: true
-  HexFormat:
+  HexLength:
+    enabled: true
+    style: short
+  HexNotation:
+    enabled: true
+    style: uppercase
+  HexValidation:
     enabled: true
   IdWithExtraneousSelector:
     enabled: false
