@@ -4,6 +4,8 @@ ga:   "UA-XXXXXXXX-Y"
 
 github_hosted: true
 
+show_footer: true
+
 # Posts # # # # # #
 show_posts: true
 show_bylines: true
@@ -29,6 +31,7 @@ exclude:
     - "Gemfile.lock"
     - "LICENSE.md"
     - "README.md"
+    - "WRITERS.md"
     - "npm-debug.log"
     - "package.json"
     - ".sass-cache"

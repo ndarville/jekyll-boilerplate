@@ -41,11 +41,13 @@
 
             {{ content }}
 
+        {% if site.show_footer == true %}
             <div class="row">
                 <div class="box" id="footer" role="contentinfo">
                     {% include footer.html %}
                 </div>
             </div>
+        {% endif %}
         </div>
         </div>
     {% if site.ga != "UA-XXXXXXXX-Y" %}
