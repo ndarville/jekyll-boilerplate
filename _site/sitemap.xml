@@ -12,21 +12,21 @@
   
   <url>
     <loc>http://example.com/404/</loc>
-    <lastmod>2014-06-06T10:35:02+02:00</lastmod>
+    <lastmod>2014-06-06T10:39:03+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://example.com/contact/</loc>
-    <lastmod>2014-06-06T10:35:02+02:00</lastmod>
+    <lastmod>2014-06-06T10:39:03+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2014-06-06T10:35:02+02:00</lastmod>
+    <lastmod>2014-06-06T10:39:03+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
