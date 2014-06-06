@@ -26,7 +26,7 @@ linters:
     style: short
   HexNotation:
     enabled: true
-    style: uppercase
+    style: uppercase  # Subjective
   HexValidation:
     enabled: true
   IdWithExtraneousSelector:
