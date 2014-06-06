@@ -24,7 +24,7 @@ mark {
 #container {
     margin: 0 auto;
     @if $boxPadding != 0 {
-        width: $containerWidth
+        width: $containerWidth;
     } @else {
         width: $containerWidth + 2*$padding;
     }

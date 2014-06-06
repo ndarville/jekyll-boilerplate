@@ -1,10 +1,10 @@
-@mixin getFontSize($size)   {
+@mixin getFontSize($size) {
     font-size: $size/$fontSize * 1em;
     @if $size <= 12 { color: #000; }
 }
 
 // @mixin getMarginTop($size)  { margin-top: $lineHeight/$size * 1em; }
-@mixin getMarginTop($size)  { margin-top: 0; }
+@mixin getMarginTop($size) { margin-top: 0; }
 @mixin getLineHeight($size) { line-height: $lineHeight/$size * 1em; }
 @mixin getVerticalRhythm($size) {
     @include getFontSize($size);
