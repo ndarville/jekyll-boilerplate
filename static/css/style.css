@@ -1,5 +1,5 @@
-/* normalize.css v3.0.0 | MIT License | git.io/normalize */
-/* Modified to only include relevant selectors */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! Modified to only include relevant selectors */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -61,6 +61,7 @@ svg:not(:root) {
 /* Grouping content
    ========================================================================== */
 hr {
+  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
