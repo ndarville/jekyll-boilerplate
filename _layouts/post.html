@@ -3,7 +3,9 @@ layout: default
 ---
 <div id="post">
     <h2>{{ page.title }}</h2>
-    <div class="date">{{ page.date | date_to_string }}</div>
+    <div class="date">
+        <time datetime="{{ page.date }}" is="time-ago" title="{{ page.date }}">{{ page.date | date_to_string }}</time>
+    </div>
     {% if site.show_bylines == true %}
         <div class="byline">{{ site.data.people[page.author].name }}</div>
         {% if site.github_hosted == true %}
