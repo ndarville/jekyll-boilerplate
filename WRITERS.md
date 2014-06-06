@@ -19,7 +19,7 @@ Enter Your Details
       name: Niclas Darville
       twitter: pessimism
       website: ndarville.com
-      mail: "
+      mail: ""
 
     zampleuser:
       name: John Appleseed
