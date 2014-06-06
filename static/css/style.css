@@ -283,6 +283,12 @@ mark {
 #posts a {
   color: #7f8ebc !important; }
 
+#post img.avatar {
+  width: 125px;
+  height: 125px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
 #post a {
   background-color: rgba(200, 200, 200, 0.7); }
 

@@ -7,7 +7,7 @@ layout: default
     {% if site.show_bylines == true %}
         <div class="byline">{{ site.data.people[page.author].name }}</div>
         {% if site.github_hosted == true %}
-            <img class="avatar" src="https://github.com/{{ page.author }}.png" alt="{{ site.data.writers[page.author].name }}" title="{{ site.data.writers[page.author].name }}" />
+            <img class="avatar" src="https://github.com/{{ page.author }}.png" alt="{{ site.data.people[page.author].name }}" title="{{ site.data.people[page.author].name }}" />
         {% endif %}
     {% endif %}
     </div>

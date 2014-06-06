@@ -75,8 +75,16 @@
     color: $blue !important;
 }
 
-#post a {
-    background-color: rgba(200, 200, 200, .7);
+#post {
+    img.avatar {
+        width: 125px;
+        height: 125px;
+        @include border-radius(50%);
+    }
+
+    a {
+        background-color: rgba(200, 200, 200, .7);
+    }
 }
 
 #footer {
