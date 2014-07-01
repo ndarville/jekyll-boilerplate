@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 {% if page.lang %}
 <html lang="{{ page.lang }}">
+{% elsif site.lang %}
+<html lang="{{ site.lang }}">
 {% else %}
 <html lang="en">
 {% endif %}
@@ -19,12 +21,7 @@
     <!--
         <link href="https://fonts.googleapis.com/css?query" rel="stylesheet" type="text/css" />
     -->
-
         <link rel="shortcut icon" href="/favicon.ico" />
-
-    {% if page.front == true %}
-        <link href="/about/" rel="prerender" />
-    {% endif %}
     </head>
 {% if page.front == true %}
     <body id="frontpage">
