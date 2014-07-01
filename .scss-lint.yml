@@ -17,6 +17,8 @@ linters:
     enabled: true
   DuplicateProperty:
     enabled: true
+  ElsePlacement:
+    enabled: false
   EmptyLineBetweenBlocks:
     enabled: true
   EmptyRule:
