@@ -23,20 +23,17 @@ mark {
 
 #container {
     margin: 0 auto;
-    @if $boxPadding != 0 {
-        width: $containerWidth;
-    } @else {
-        width: $containerWidth + 2*$padding;
-    }
+    @include box-sizing;
+    @if $boxPaddingHor != 0 { width: $containerWidth; }
+    @else { width: $containerWidth + 2*$padding; }
 }
 
 #padder {
     @include box-sizing;
-    @if $boxPadding != 0 {
-        margin: 0;
-    } @else {
-        margin: 0 $padding;
-    }
+    //! Temporary hotfix
+    // @if $boxPaddingHor != 0 { margin: 0; }
+    // @else { margin: 0 $boxPaddingHor; }
+    margin: 0 $padding;
 }
 
 .row {
@@ -50,7 +47,7 @@ mark {
     width: 100%;
     display: inline-block;
     float: left;
-    padding: $boxPadding;
+    padding: $boxPaddingVer $boxPaddingHor;
     @include clearfix;
     @include box-sizing;
 }
