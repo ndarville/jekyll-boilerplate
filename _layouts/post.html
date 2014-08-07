@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="post">
-    <h2>{{ page.title }}</h2>
+    <h2>{{ page.title | markdownify | strip_html }}</h2>
     <div class="date">
         <time datetime="{{ page.date }}" is="time-ago" title="{{ page.date }}">{{ page.date | date_to_string }}</time>
     </div>
