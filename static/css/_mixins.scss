@@ -72,3 +72,37 @@
         }
     }
 }
+
+@mixin underline-menu($thickness:6px, $normalColor: none,$activeColor:#000, $hoverColor:red) {
+    // *, *:before, *:after {
+    //   @include box-sizing;
+    //   margin: 0; padding: 0;
+    // }
+
+    // a {
+    position: relative;
+    display: block;
+
+    &.active:after,
+    &:hover:after {
+       content: '';
+       display: block;
+       position: absolute;
+       bottom: 0; left: 0; right: 0;
+    }
+
+    @if $normalColor != none {
+        &:after {
+            border-bottom: $thickness solid $normalColor;
+        }
+    }
+
+    &.active:after {
+        border-bottom: $thickness solid $activeColor;
+    }
+
+    &:hover:after {
+        border-bottom: $thickness solid $hoverColor;
+    }
+    // }
+}
