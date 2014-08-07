@@ -12,7 +12,7 @@ Assuming Ruby and Git are installed:
 1. `git clone git@github.com:ndarville/jekyll-boilerplate.git`
 2. `cd jekyll-boilerplate`
 3. `bundle install`
-4. `jekyll serve --watch`
+4. `bundle exec jekyll serve --watch`
 
 This creates a `_site/` folder and starts a `localhost:4000` server.
 
