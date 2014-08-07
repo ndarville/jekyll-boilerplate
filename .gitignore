@@ -2,5 +2,6 @@
 .sass-cache/
 node_modules/
 Gemfile.lock
+Gemfile.github-pages.lock
 npm-debug.log
 s3_website.yml
