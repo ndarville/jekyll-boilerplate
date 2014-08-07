@@ -21,7 +21,7 @@ before_script:
 # - bundle outdated
 
 script:
-  - bundle exec jekyll build
+  - bundle exec jekyll build --trace
 
 after_script:
   - htmlproof ./_site
