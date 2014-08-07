@@ -39,6 +39,7 @@ linters:
   Indentation:
     enabled: false  # Disabled for extra indentaiton
     width: 4  # Subjective
+    character: spaces
   LeadingZero:
     enabled: true
   NameFormat:
@@ -52,6 +53,8 @@ linters:
   SelectorDepth:
     enabled: true
   Shorthand:
+    enabled: true
+  SingleLinePerProperty:
     enabled: true
   SingleLinePerSelector:
     enabled: true
@@ -69,10 +72,12 @@ linters:
   StringQuotes:
     enabled: true
     style: double_quotes  # Subjective
-  TrailingSemicolonAfterPropertyValue:
+  TrailingSemicolon:
     enabled: true
   UnnecessaryMantissa:
     enabled: true
+  UnnecessaryParentReference:
+    enabled: tur
   UrlFormat:
     enabled: true
   UrlQuotes:
