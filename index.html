@@ -22,15 +22,13 @@ front:  true
     </div>
 </div>
 
-<div class="row">
-    <div class="box" id="company-info" role="section">
-        <h2>Who We Are</h2>
+<div class="box" id="company-info" role="section">
+    <h2>Who We Are</h2>
 
-        <p>The Example Company is a subsidiary of the Lorem Ipsum Corporation. We have a year-long history of providing the most pristine placeholder content in the world.</p>
-    </div>
+    <p>The Example Company is a subsidiary of the Lorem Ipsum Corporation. We have a year-long history of providing the most pristine placeholder content in the world.</p>
 </div>
 
-{% if site.show_posts == true %}
+{% if site.show_posts == true and site.posts.size != 0 %}
     <div class="row" id="posts">
         <div class="box" role="section">
             <h2>Posts</h2>
