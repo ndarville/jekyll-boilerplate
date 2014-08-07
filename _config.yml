@@ -1,10 +1,11 @@
 name: "Example Company"
-url:   http://example.com
-ga:   "UA-XXXXXXXX-Y"
-
+url: http://example.com
+ga: "UA-XXXXXXXX-Y"
 github_hosted: true
-
 show_footer: true
+favicon: true
+multilingual: false
+printable: true
 
 # Posts # # # # # #
 show_posts: true
