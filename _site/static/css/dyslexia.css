@@ -1,0 +1,43 @@
+/** Credit to http://dyslexicfonts.com/plugin/easyread.css */
+@font-face {
+  font-family: "opendyslexic";
+  src: url("/static/typefaces/open-dyslexic/otf/OpenDyslexic-Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "opendyslexic";
+  src: url("/static/typefaces/open-dyslexic/otf/OpenDyslexic-Bold.otf");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "opendyslexic";
+  src: url("/static/typefaces/open-dyslexic/otf/OpenDyslexic-Italic.otf");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: "opendyslexic";
+  src: url("/static/typefaces/open-dyslexic/otf/OpenDyslexic-BoldItalic.otf");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: "opendyslexicmonoregular";
+  src: url("/static/typefaces/open-dyslexic/otf/OpenDyslexicMono-Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+*,
+body,
+input,
+textarea {
+  font-family: opendyslexic !important; }
+
+code,
+pre {
+  font-family: opendyslexicmonoregular !important; }
+
+p:nth-child(even),
+li:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.03) !important; }
+
+p:hover,
+li:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important; }

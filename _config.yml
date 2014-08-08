@@ -6,6 +6,7 @@ show_footer: true
 favicon: true
 multilingual: false
 printable: true
+dyslexia_support: true
 
 # Posts # # # # # #
 show_posts: true

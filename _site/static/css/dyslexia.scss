@@ -1,0 +1,61 @@
+/** Credit to http://dyslexicfonts.com/plugin/easyread.css */
+
+$dyslexiaDir: "/static/typefaces/open-dyslexic";
+$extension:   "otf";
+
+@font-face { // Regular
+    font-family: "opendyslexic";
+    src: url("#{$dyslexiaDir}/#{$extension}/OpenDyslexic-Regular.#{$extension}");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { // Bold
+    font-family: "opendyslexic";
+    src: url("#{$dyslexiaDir}/#{$extension}/OpenDyslexic-Bold.#{$extension}");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face { // Italic
+    font-family: "opendyslexic";
+    src: url("#{$dyslexiaDir}/#{$extension}/OpenDyslexic-Italic.#{$extension}");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face { // Bold italic
+    font-family: "opendyslexic";
+    src: url("#{$dyslexiaDir}/#{$extension}/OpenDyslexic-BoldItalic.#{$extension}");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face { // Monospace
+    font-family: "opendyslexicmonoregular";
+    src: url("#{$dyslexiaDir}/#{$extension}/OpenDyslexicMono-Regular.#{$extension}");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+body,
+input,
+textarea {
+    font-family: opendyslexic !important;
+}
+
+code,
+pre {
+    font-family: opendyslexicmonoregular !important;
+}
+
+p:nth-child(even),
+li:nth-child(even) {
+    background-color: rgba(0, 0, 0, .03) !important;
+}
+
+p:hover,
+li:hover {
+    background-color: rgba(0, 0, 0, .1) !important;
+}
