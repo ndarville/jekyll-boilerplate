@@ -4,7 +4,7 @@ Jekyll Project Boilerplate
 [![MIT-license badge](http://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/ndarville/jekyll-boilerplate/blob/master/LICENSE.md)
 [![Dependency Status](https://gemnasium.com/ndarville/jekyll-boilerplate.svg?branch=master)](https://gemnasium.com/ndarville/jekyll-boilerplate)
 
-A template for building a static website with the Ruby CMS [Jekyll][jekyll], as well as a project-directory template for how I, @ndarville aim to start on each project.
+A template for building a static website with the Ruby CMS [Jekyll][jekyll], as well as a project-directory template for how I, @ndarville, aim to start on each project.
 
 ## Installation
 Assuming Ruby and Git are installed:
