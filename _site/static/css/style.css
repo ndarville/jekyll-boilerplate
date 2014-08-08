@@ -301,6 +301,8 @@ mark {
   #footer a {
     font-weight: bold;
     color: #7f8ebc; }
+  #footer span {
+    white-space: nowrap; }
 
 #content {
   float: left; }
