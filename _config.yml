@@ -31,6 +31,8 @@ exclude:
     - ".travis.yml"
     - "Gemfile"
     - "Gemfile.lock"
+    - "Gemfile.github-pages"
+    - "Gemfile.github-pages.lock"
     - "LICENSE.md"
     - "README.md"
     - "WRITERS.md"

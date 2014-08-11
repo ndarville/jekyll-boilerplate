@@ -22,6 +22,7 @@ install:
 
 before_script:
   - cat $BUNDLE_GEMFILE.lock
+  - git diff --word-diff $BUNDLE_GEMFILE.lock
 # - bundle outdated
 
 script:

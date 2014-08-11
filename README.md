@@ -22,10 +22,11 @@ This creates a `_site/` folder and starts a `localhost:4000` server.
 1. Create a GitHub repo with the name `githubusername.github.io`.
 2. Clone the boilerplate with `git clone git@github.com:ndarville/jekyll-boilerplate.git`.
 3. `cd jekyll-boilerplate`.
-4. Delete `Gemfile.github-pages`; you won't be needing this.
-5. `bundle install`.
-6. Push your new site to `githubusername.github.io`.
-7. Done! For more, see [the official GitHub Pages site][gp].
+4. Delete both `.lock` files.
+5. Delete `Gemfile.github-pages`; you won't be needing this.
+6. `bundle install`.
+7. Push your new site to `githubusername.github.io`.
+8. Done! For more, see [the official GitHub Pages site][gp].
 
 For an example project, visit [my GitHub site][ndarville.io].
 
@@ -37,18 +38,19 @@ For an example of a GitHub-hosted site with a custom domain, see [my Hafnia Time
 
 ### On AWS
 1. Clone the boilerplate with `git clone git@github.com:ndarville/jekyll-boilerplate.git`.
-2. `cd jekyll-boilerplate`
-3. Delete `Gemfile` and rename `Gemfile.github-pages` to `Gemfile`.
-4. `bundle install`
-5. Build your site with `bundle exec jekyll build`.
-6. Rename `_s3_website.yml` by removing the prepended underscore.
-7. Enter your AWS credentials in `s3_website.yml`.
-8. `s3_website cfg apply` will configure AWS.
-9. You can say `[y]es` to setting up CloudFront, if you want. You can just type `[n]o` for now.
-10. Push your built site to AWS with `s3_website push`.
+2. `cd jekyll-boilerplate`.
+3. Delete both `.lock` files.
+4. Delete `Gemfile` and rename `Gemfile.github-pages` to `Gemfile`.
+5. `bundle install`
+6. Build your site with `bundle exec jekyll build`.
+7. Rename `_s3_website.yml` by removing the prepended underscore.
+8. Enter your AWS credentials in `s3_website.yml`.
+9. `s3_website cfg apply` will configure AWS.
+10. You can say `[y]es` to setting up CloudFront, if you want. You can just type `[n]o` for now.
+11. Push your built site to AWS with `s3_website push`.
 
     `s3_website` automatically recognizes the folder `_site` and deploys it. If you want to push a folder with a different name, use `s3_website push --site="yourfoldername"`.
-11. Done!
+12. Done!
 
 From now on, just use `s3_website push` to deploy your changes. For more info on using `s3_website`, consult [its docs][s3].
 
