@@ -192,7 +192,8 @@ mark {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 840px; }
+  max-width: 840px;
+  width: 100%; }
 
 #padder {
   -webkit-box-sizing: border-box;
@@ -327,7 +328,6 @@ mark {
     line-height: 15px; }
 
   #container {
-    width: 100%;
     max-width: 450px; }
 
   #site-navigation {

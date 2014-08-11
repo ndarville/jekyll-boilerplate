@@ -24,8 +24,9 @@ mark {
 #container {
     margin: 0 auto;
     @include box-sizing;
-    @if $boxPaddingHor != 0 { width: $containerWidth; }
-    @else { width: $containerWidth + 2*$padding; }
+    @if $boxPaddingHor != 0 { max-width: $containerWidth; }
+    @else { max-width: $containerWidth + 2*$padding; }
+    width: 100%;
 }
 
 #padder {
