@@ -62,6 +62,9 @@ Leave feedback and questions in Issues, if you want.
 ## Testing and Travis CI
 The boilerplate comes with its own [Travis CI configuration][travis]. It would be silly not to use it. See what it does for this repo over [here][travis-example].
 
+## “Your `s3_website` Gem Is Out of Date, Dudeski”
+I know. The reason is that [versions from `2.0` require Java][s3-java], and I know I personally don’t want anything to do with Java, if I can help it.
+
 ## License
 MIT License.
 
@@ -76,3 +79,4 @@ MIT License.
 [mou]: http://mouapp.com/
 [travis]: https://github.com/ndarville/jekyll-boilerplate/blob/master/.travis.yml
 [travis-example]: https://travis-ci.org/ndarville/jekyll-boilerplate/
+[s3-java]: https://github.com/laurilehmijoki/s3_website/blob/master/changelog.md#200
