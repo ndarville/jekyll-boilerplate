@@ -43,10 +43,10 @@ GEM
     html-pipeline (1.9.0)
       activesupport (>= 2)
       nokogiri (~> 1.4)
-    html-proofer (1.1.4)
+    html-proofer (1.2.1)
       colored (~> 1.2)
       mercenary (~> 0.3.2)
-      nokogiri (~> 1.6.0)
+      nokogiri (~> 1.5)
       typhoeus (~> 0.6.7)
       yell (~> 2.0)
     i18n (0.6.11)
@@ -129,5 +129,5 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 22)
-  html-proofer (~> 1.1.4)
+  html-proofer (~> 1.2.1)
   scss-lint (~> 0.26.0)

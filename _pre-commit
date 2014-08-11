@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+### Update gems before committing
+cd $(git rev-parse --git-dir) && cd ..
+
+bundle install --gemfile=Gemfile
+bundle install --gemfile=Gemfile.github-pages

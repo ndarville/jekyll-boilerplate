@@ -28,7 +28,7 @@ GEM
     fast-stemmer (1.0.2)
     ffi (1.9.3)
     filey-diff (2.0.0)
-    html-proofer (1.1.6)
+    html-proofer (1.2.1)
       colored (~> 1.2)
       mercenary (~> 0.3.2)
       nokogiri (~> 1.5)
@@ -114,7 +114,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  html-proofer (~> 1.1.6)
+  html-proofer (~> 1.2.1)
   jekyll (~> 2.2.0)
   jekyll-redirect-from (~> 0.4.0)
   jekyll-sitemap (~> 0.5.1)
