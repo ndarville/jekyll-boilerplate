@@ -330,14 +330,8 @@ mark {
     width: 100%;
     max-width: 450px; }
 
-  #site-navigation.box {
-    font-size: 0.71429em;
-    color: #000;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+  #site-navigation {
     text-align: center; }
-    #site-navigation.box li a {
-      padding: 0 .75em; }
 
   #name {
     background-color: #F8F8F8; }

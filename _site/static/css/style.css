@@ -189,13 +189,16 @@ mark {
 
 #container {
   margin: 0 auto;
-  width: 800px; }
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 840px; }
 
 #padder {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0; }
+  margin: 0 20px; }
 
 .row {
   width: 100%;
@@ -212,7 +215,7 @@ mark {
   width: 100%;
   display: inline-block;
   float: left;
-  padding: 2.5em;
+  padding: 2.5em 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -327,14 +330,8 @@ mark {
     width: 100%;
     max-width: 450px; }
 
-  #site-navigation.box {
-    font-size: 0.71429em;
-    color: #000;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+  #site-navigation {
     text-align: center; }
-    #site-navigation.box li a {
-      padding: 0 .75em; }
 
   #name {
     background-color: #F8F8F8; }
