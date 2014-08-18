@@ -328,7 +328,7 @@ mark {
     line-height: 15px; }
 
   #container {
-    max-width: 450px; }
+    width: 100%; }
 
   #site-navigation {
     text-align: center; }
