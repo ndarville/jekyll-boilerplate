@@ -25,6 +25,7 @@ redcarpet:
 gems:
     - jekyll-redirect-from
     - jekyll-sitemap
+    - jekyll-sass-converter
 
 include: [".htaccess"]
 exclude:

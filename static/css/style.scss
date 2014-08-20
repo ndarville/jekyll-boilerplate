@@ -1,4 +1,4 @@
-@import "_reset", "_config", "_constants", "_mixins", "_base";
+@import "_sass/_reset", "_sass/_config", "_sass/_constants", "_sass/_mixins", "_sass/_base";
 
 #site-navigation {
     @include getFontSize($navigationSize);
@@ -119,4 +119,4 @@
     }
 }
 
-@import "_responsive";
+@import "_sass/_responsive";
