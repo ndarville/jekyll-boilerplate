@@ -245,7 +245,6 @@ mark {
     #site-navigation li a {
       display: inline-block;
       padding: 0 1em;
-      text-transform: uppercase;
       color: #555555; }
       #site-navigation li a:visited {
         color: #555555; }
@@ -332,6 +331,8 @@ mark {
 
   #site-navigation {
     text-align: center; }
+    #site-navigation .dyslexia-button {
+      display: none; }
 
   #name {
     background-color: #F8F8F8; }
