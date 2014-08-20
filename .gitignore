@@ -1,5 +1,6 @@
 .bundle/
 .sass-cache/
+_site/sitemap.xml
 node_modules/
 npm-debug.log
 s3_website.yml
