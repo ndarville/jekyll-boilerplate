@@ -41,6 +41,16 @@
     }
 }
 
+@mixin hide() {
+    color: #FFF;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 @mixin padding-fix() {
     /** Margin and padding reset in WebKit */
     -webkit-margin-before: 0;
