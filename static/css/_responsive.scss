@@ -1,4 +1,11 @@
-@mixin iphone-mq() {};
+@mixin iphone-mq() {
+    @if $iPhoneTint != none {
+        body {
+            background-color: $iPhoneTint; // Tint
+            background-image: linear-gradient(to bottom, $bgColor 0%, $bgColor 100%); // Body
+        }
+    }
+};
 
 @media only screen {
     @media (max-device-width: $mobileWidth) {
