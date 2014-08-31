@@ -44,4 +44,5 @@ exclude:
 
 sass:
     sass_dir: static/css/
+    sourcemap: :auto
     style: :nested
