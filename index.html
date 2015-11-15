@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jekyll-boilerplate by ndarville</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Jekyll-boilerplate</h1>
+      <h2 class="project-tagline">A (well, my) boilerplate for starting a webdesign project with the static-blog CMS Jekyll</h2>
+      <a href="https://github.com/ndarville/jekyll-boilerplate" class="btn">View on GitHub</a>
+      <a href="https://github.com/ndarville/jekyll-boilerplate/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ndarville/jekyll-boilerplate/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="jekyll-project-boilerplate" class="anchor" href="#jekyll-project-boilerplate" aria-hidden="true"><span class="octicon octicon-link"></span></a>Jekyll Project Boilerplate</h1>
+
+<p><a href="https://travis-ci.org/ndarville/jekyll-boilerplate?branch=master"><img src="https://travis-ci.org/ndarville/jekyll-boilerplate.svg?branch=master" alt="Build Status"></a>
+<a href="https://github.com/ndarville/jekyll-boilerplate/blob/master/LICENSE.md"><img src="http://img.shields.io/badge/License-MIT-blue.svg" alt="MIT-license badge"></a>
+<a href="https://gemnasium.com/ndarville/jekyll-boilerplate"><img src="https://gemnasium.com/ndarville/jekyll-boilerplate.svg?branch=master" alt="Dependency Status"></a></p>
+
+<p>A template for building a static website with the Ruby CMS <a href="http://jekyllrb.com">Jekyll</a>, as well as a project-directory template for how I, <strong><a href="https://github.com/ndarville" class="user-mention">@ndarville</a></strong>, aim to start on each project.</p>
+
+<h2>
+<a id="local-installation" class="anchor" href="#local-installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Local Installation</h2>
+
+<p>Assuming Ruby and Git are installed:</p>
+
+<ol>
+<li><code>git clone git@github.com:ndarville/jekyll-boilerplate.git</code></li>
+<li><code>cd jekyll-boilerplate</code></li>
+<li><code>bundle install</code></li>
+<li><code>bundle exec jekyll serve --watch</code></li>
+</ol>
+
+<p>This creates a <code>_site/</code> folder and starts a <code>localhost:4000</code> server.</p>
+
+<h2>
+<a id="deployment" class="anchor" href="#deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deployment</h2>
+
+<h3>
+<a id="on-githubio" class="anchor" href="#on-githubio" aria-hidden="true"><span class="octicon octicon-link"></span></a>On GitHub.io</h3>
+
+<ol>
+<li>Create a GitHub repo with the name <code>githubusername.github.io</code>.</li>
+<li>Clone the boilerplate with <code>git clone git@github.com:ndarville/jekyll-boilerplate.git</code>.</li>
+<li>
+<code>cd jekyll-boilerplate</code>.</li>
+<li>Delete both <code>.lock</code> files.</li>
+<li>Delete <code>Gemfile.github-pages</code>; you won't be needing this.</li>
+<li>
+<code>bundle install</code>.</li>
+<li>Push your new site to <code>githubusername.github.io</code>.</li>
+<li>Done! For more, see <a href="https://pages.github.com">the official GitHub Pages site</a>.</li>
+</ol>
+
+<p>For an example project, visit <a href="https://github.com/ndarville/ndarville.github.io">my GitHub site</a>.</p>
+
+<h4>
+<a id="using-a-custom-domain" class="anchor" href="#using-a-custom-domain" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using a Custom Domain</h4>
+
+<ol>
+<li>Create a <code>CNAME</code> file in root with the line <code>githubusername.github.io</code>.</li>
+<li>Configure DNS using <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages">this</a> guide by GitHub.</li>
+</ol>
+
+<p>For an example of a GitHub-hosted site with a custom domain, see <a href="https://github.com/hafniatimes/hafniatimes.github.io">my Hafnia Times project</a>.</p>
+
+<h3>
+<a id="on-aws" class="anchor" href="#on-aws" aria-hidden="true"><span class="octicon octicon-link"></span></a>On AWS</h3>
+
+<ol>
+<li>Clone the boilerplate with <code>git clone git@github.com:ndarville/jekyll-boilerplate.git</code>.</li>
+<li>
+<code>cd jekyll-boilerplate</code>.</li>
+<li>Delete both <code>.lock</code> files.</li>
+<li>Delete <code>Gemfile</code> and rename <code>Gemfile.github-pages</code> to <code>Gemfile</code>.</li>
+<li><code>bundle install</code></li>
+<li>Build your site with <code>bundle exec jekyll build</code>.</li>
+<li>Rename <code>_s3_website.yml</code> by removing the prepended underscore.</li>
+<li>Enter your AWS credentials in <code>s3_website.yml</code>.</li>
+<li>
+<code>s3_website cfg apply</code> will configure AWS.</li>
+<li>You can say <code>[y]es</code> to setting up CloudFront, if you want. You can just type <code>[n]o</code> for now.</li>
+<li>
+<p>Push your built site to AWS with <code>s3_website push</code>.</p>
+
+<p><code>s3_website</code> automatically recognizes the folder <code>_site</code> and deploys it. If you want to push a folder with a different name, use <code>s3_website push --site="yourfoldername"</code>.</p>
+</li>
+<li>Done!</li>
+</ol>
+
+<p>From now on, just use <code>s3_website push</code> to deploy your changes. For more info on using <code>s3_website</code>, consult <a href="https://github.com/laurilehmijoki/s3_website">its docs</a>.</p>
+
+<h2>
+<a id="asides" class="anchor" href="#asides" aria-hidden="true"><span class="octicon octicon-link"></span></a>Asides</h2>
+
+<p>Page files are in <a href="http://daringfireball.net/projects/markdown/">Markdown</a>, .markdown. They are viewable in any text editor, but try out <a href="http://mouapp.com/">Mou</a> if you want to see the rendered version.</p>
+
+<p>As usual, you can update your <code>style.css</code> with the changes to <code>style.scss</code> by running <code>sass --watch style.scss:style.css</code> in <code>static/css/</code>.</p>
+
+<p>Leave feedback and questions in Issues, if you want.</p>
+
+<h2>
+<a id="testing-and-travis-ci" class="anchor" href="#testing-and-travis-ci" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing and Travis CI</h2>
+
+<p>The boilerplate comes with its own <a href="https://github.com/ndarville/jekyll-boilerplate/blob/master/.travis.yml">Travis CI configuration</a>. It would be silly not to use it. See what it does for this repo over <a href="https://travis-ci.org/ndarville/jekyll-boilerplate/">here</a>.</p>
+
+<h2>
+<a id="your-s3_website-gem-is-out-of-date-dudeski" class="anchor" href="#your-s3_website-gem-is-out-of-date-dudeski" aria-hidden="true"><span class="octicon octicon-link"></span></a>“Your <code>s3_website</code> Gem Is Out of Date, Dudeski”</h2>
+
+<p>I know. The reason is that <a href="https://github.com/laurilehmijoki/s3_website/blob/master/changelog.md#200">versions from <code>2.0</code> require Java</a>, and I know I personally don’t want anything to do with Java, if I can help it.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT License.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ndarville/jekyll-boilerplate">Jekyll-boilerplate</a> is maintained by <a href="https://github.com/ndarville">ndarville</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
